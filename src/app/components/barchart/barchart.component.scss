@@ -1,0 +1,12 @@
+.chartWithOverlay {
+  position: relative;
+  display: flex;
+}
+.overlay {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 60px;  /* chartArea top  */
+  left: 180px; /* chartArea left */
+}
+

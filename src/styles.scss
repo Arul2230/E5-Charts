@@ -1,1 +1,102 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-size: rem(14px) !important;
+}
+body {
+  font-family: Roboto !important;
+}
+
+@media screen and (min-width:1600px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@include media-breakpoint-only(xl) {
+  body {
+    font-size: 16px !important;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  body {
+    font-size: 15px !important;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  body {
+    font-size: 12px !important;
+  }
+}
+
+.google-visualization-table {
+  width: 100% !important;
+}
+.google-visualization-table-table {
+  font-family: Roboto !important;
+  width: 100% !important;
+}
+.google-visualization-formatters-bars > .google-charts-bar-b {
+  background: #76e5e2 !important;
+  height: 8px !important;
+  border-radius: 2px !important;
+}
+
+.google-visualization-formatters-bars > .google-charts-bar-s {
+  background: transparent !important;
+}
+
+.google-visualization-formatters-bars > .google-charts-bar-w {
+  background: transparent !important;
+  height: 8px !important;
+}
+
+.google-visualization-table .gradient {
+ background: transparent !important;
+}
+
+.google-visualization-table-table td {
+  border: none !important;
+  padding: 7px .35em !important;
+}
+
+.google-visualization-table-table th {
+  border: none !important;
+  padding: 7px .35em !important;
+}
+
+.google-visualization-table-tr-head {
+  background: transparent !important;
+  text-align: left !important;
+  color: #6f717b !important;
+}
+
+.google-visualization-table-tr-sel {
+  background-color: #f2f2f2 !important;
+}
+
+.google-visualization-table-tr-over {
+  background-color: #f2f2f2 !important;
+}
+.col-md-6{
+  max-width: 49% !important;
+}
+
+.google-visualization-table-tr-odd {
+  background-color: transparent !important;
+}
+
+.google-visualization-table-td.google-visualization-table-type-number {
+  text-align: center !important;
+}
+

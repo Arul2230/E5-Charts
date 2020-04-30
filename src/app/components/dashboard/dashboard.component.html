@@ -1,0 +1,45 @@
+<div class="dashboard ml-5">
+  <div class="row pt-5">
+    <span class="title"> Dashboard Report</span>
+    <img src="../../../assets/07_Date Filter_new.svg" class="date-filter">
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-9 col-9 row">
+        <div class="col-md-6 chart-card">
+          <div class="d-flex my-3">
+            <span class="chart-title ml-auto">Average Aged</span>
+            <img src="../../../assets/08_3 dots.svg" class="ml-auto">
+          </div>
+          <app-barchart idName='column_chart' [options]="averageAgeoptions" type='bar' link='https://docs.google.com/spreadsheets/d/1xDibMxM6b_8h4wblVAWIAlie28MyKzPO5xC1dudhOFU/edit?gid=0'></app-barchart>
+        </div>
+        <div class="col-md-6 chart-card ml-auto">
+          <div class="d-flex my-3">
+            <span class="chart-title ml-auto">Outstanding Orders by Physician</span>
+            <img src="../../../assets/08_3 dots.svg" class="ml-auto">
+           </div>
+          <app-barchart idName='bar_chart' [options]='outstandingOrderOption' type='dataview' link='https://docs.google.com/spreadsheets/d/1xDibMxM6b_8h4wblVAWIAlie28MyKzPO5xC1dudhOFU/edit?gid=1308010011'></app-barchart>
+        </div>
+        <div class="col-md-6 mt-3 chart-card">
+          <div class="d-flex my-3">
+            <span class="chart-title ml-auto">Orders by Week</span>
+            <img src="../../../assets/08_3 dots.svg" class="ml-auto">
+          </div>
+          <app-barchart idName='order_chart' [options]='orderByWeeksOptions' type='bar' link='https://docs.google.com/spreadsheets/d/1xDibMxM6b_8h4wblVAWIAlie28MyKzPO5xC1dudhOFU/edit?gid=685618168'></app-barchart>
+        </div>
+        <div class="col-md-6 mt-3 chart-card ml-auto">
+          <div class="d-flex my-3">
+            <span class="chart-title ml-auto">Orders by Status</span>
+            <img src="../../../assets/08_3 dots.svg" class="ml-auto">
+          </div>
+          <app-barchart idName='donut_chart' type='donut' [options]="orderStatusOptions" link='https://docs.google.com/spreadsheets/d/1xDibMxM6b_8h4wblVAWIAlie28MyKzPO5xC1dudhOFU/edit?gid=401423576'></app-barchart>
+        </div>
+    </div>
+    <div class="col-md-3 col-3 chart-card ml-auto">
+      <div class="d-flex my-3">
+        <span class="chart-title ml-auto">Average Aged by Physician</span>
+        <img src="../../../assets/08_3 dots.svg" class="ml-auto">
+      </div>
+  <app-barchart idName='physician_chart' [options]='averageAgePhysicianOptions' type='dataview' link='https://docs.google.com/spreadsheets/d/1xDibMxM6b_8h4wblVAWIAlie28MyKzPO5xC1dudhOFU/edit?gid=155068070'></app-barchart>
+    </div>
+  </div>
+</div>

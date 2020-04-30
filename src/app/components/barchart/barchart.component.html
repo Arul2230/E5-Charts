@@ -1,0 +1,16 @@
+<ng-container *ngIf="type !== 'donut'">
+  <div id={{idName}} ></div>
+</ng-container>
+
+<div *ngIf="type === 'donut'" class="chartWithOverlay mt-3">
+  <div id='table-order' class="col-md-6">
+
+  </div>
+  <div id={{idName}} class="col-md-6"></div>
+  <!-- <div class="overlay">
+    <div class="">
+      Total Orders
+      <div style="color: #818ECE;" class="justify-content-center">283</div>
+    </div>
+  </div> -->
+ </div>

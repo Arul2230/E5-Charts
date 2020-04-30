@@ -1,0 +1,23 @@
+.dashboard {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-color: #354EB4;
+  width: calc(100vw - 15rem);
+  height: 100%;
+  .title {
+    color: #354EB4;
+    font-weight: bolder;
+  }
+  .date-filter {
+    margin-left: auto;
+  }
+  .chart-card {
+    border: 1px solid #E8EBF6;
+    border-radius: 5px;
+    .chart-title {
+      justify-content: center;
+      color: #717171;
+      font-weight: bolder;
+    }
+  }
+}
